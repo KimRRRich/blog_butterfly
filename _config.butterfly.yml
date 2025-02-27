@@ -63,11 +63,10 @@ disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
 default_top_img:
-  img: /img/index.jpg
-  effect: false
+  img: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)
 
 # The banner image of index page
-index_img:
+index_img: /img/mjy.jpg
 
 # The banner image of archive page
 archive_img:
@@ -93,9 +92,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background:
-  img: /img/index.jpg
-  effect: false
+background: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)
 
 cover:
   # Disable the cover or not
@@ -291,7 +288,7 @@ aside:
       link: https://github.com/KimRRRich
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 这是KimRRRich的个人主页（施工中！）
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -361,17 +358,17 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
-  default: 繁
+  default: 简
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
   defaultEncoding: 2
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '繁'
+  msgToTraditionalChinese: '简'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  msgToSimplifiedChinese: '繁'
 
 # Read Mode
 readmode: true
