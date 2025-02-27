@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: title
+subtitle: 'subtitle'
+description: 'description'
+keywords: keywords
+author: KimRRRich
 language: en
 timezone: ''
 
