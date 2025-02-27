@@ -1,7 +1,6 @@
 ---
 title: Blog Test
 ---
-Blog Test
 
 ## Quick Start
 
