@@ -46,7 +46,7 @@ code_blocks:
 #   icon: link || the description || color
 social:
   fab fa-github: https://github.com/KimRRRich || Github || '#24292e'
-  fas fa-envelope: mailto:kimrrrich@163.com || Email || '#4a7dbe'
+  fas fa-envelope: kimrrrich@163.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
@@ -92,7 +92,7 @@ footer_img: false
 
 # Website Background
 # Can set it to color or image url
-background: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)
+# background: url(https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg)
 
 cover:
   # Disable the cover or not
