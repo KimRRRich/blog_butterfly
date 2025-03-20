@@ -17,15 +17,68 @@ curl -s https://install.zerotier.com | sudo bash
 zerotier-cli status
 ```
 ### 2.公网服务器自建Moon节点
-
-### 3.Moon节点加入zerotier网络
-
-### 4.设备加入zerotier网络
-
-### 5.设备将Moon节点入轨
+1.生成 Moon 配置文件
 ``` bash
-$ zerotier-cli orbit Moon节点ID Moon节点ID
+cd /var/lib/zerotier-one
+```
+``` bash
+zerotier-idtool initmoon identity.public > moon.json
+```
+2.编辑 Moon 配置文件
+``` bash
+vim moon.json
 ```
 
-### 6.测试
+``` bash
+  "id": "96******8c",
+  "objtype": "world",
+  "roots": [
+    {
+      "identity": "96******8c:0:******",
+      "stableEndpoints": []
+    }
+  ],
+  "signingKey": "signingKey",
+  "signingKey_SECRET": "signingKey_SECRET",
+  "updatesMustBeSignedBy": "updatesMustBeSigned",
+  "worldType": "moon"
+```
+找到 "stableEndpoints": [] 。
+添加 "IPv4地址/9993" 或者 "IPv4地址/9993","IPv6地址/9993" 。
+
+3.生成 .moon 签名文件
+``` bash
+zerotier-idtool genmoon moon.json
+```
+
+4.创建 moon 结点文件夹并复制签名文件到该文件夹内
+``` bash
+mkdir /var/lib/zerotier-one/moons.d
+```
+``` bash
+cp 0000006xxxxxxxxx.moon moons.d/
+```
+
+5.重启 ZeroTier 服务
+``` bash
+/etc/init.d/zerotier-one restart
+```
+
+### 3.Moon节点加入zerotier网络
+``` bash
+zerotier-cli join <Network ID>
+```
+
+### 4.设备加入zerotier网络
+``` bash
+zerotier-cli join <Network ID>
+```
+``` bash
+zerotier-cli orbit <Moon 节点 ID> <Moon 节点 ID>
+```
+
+### 5.测试
+``` bash
+zerotier-cli listpeers
+```
 
