@@ -8,23 +8,23 @@ title: Zerotier内网穿透+公网自建Moon节点+飞牛影视库
 
 ## 步骤：
 ### 1.公网服务器安装Zerotier，以ubuntu22.04为例：
-1.安装Zerotier
+①安装Zerotier
 ``` bash
 curl -s https://install.zerotier.com | sudo bash
 ```
-2.查看是否安装成功,看到Online即成功
+②查看是否安装成功,看到Online即成功
 ``` bash
 zerotier-cli status
 ```
 ### 2.公网服务器自建Moon节点
-1.生成 Moon 配置文件
+①生成 Moon 配置文件
 ``` bash
 cd /var/lib/zerotier-one
 ```
 ``` bash
 zerotier-idtool initmoon identity.public > moon.json
 ```
-2.编辑 Moon 配置文件
+②编辑 Moon 配置文件
 ``` bash
 vim moon.json
 ```
@@ -46,12 +46,12 @@ vim moon.json
 找到 "stableEndpoints": [] 。
 添加 "IPv4地址/9993" 或者 "IPv4地址/9993","IPv6地址/9993" 。
 
-3.生成 .moon 签名文件
+③生成 .moon 签名文件
 ``` bash
 zerotier-idtool genmoon moon.json
 ```
 
-4.创建 moon 结点文件夹并复制签名文件到该文件夹内
+④创建 moon 结点文件夹并复制签名文件到该文件夹内
 ``` bash
 mkdir /var/lib/zerotier-one/moons.d
 ```
@@ -59,7 +59,7 @@ mkdir /var/lib/zerotier-one/moons.d
 cp 0000006xxxxxxxxx.moon moons.d/
 ```
 
-5.重启 ZeroTier 服务
+⑤重启 ZeroTier 服务
 ``` bash
 /etc/init.d/zerotier-one restart
 ```
