@@ -1,7 +1,7 @@
 ---
 title: KimRRRich愿望单！
 ---
-# 说明：
+<!-- # 说明： -->
 记录KimRRRich当前最想要的东西！想要程度与出现顺序大概为正相关。
 # 1. 992.2 GT3：
 2025款911（992.2） GT3延续了保时捷的经典设计语言，车身流线与空气动力学特性完美结合。前保险杠和进气口经过重新设计，提升了冷却效果和下压力。车尾配备了可调节的碳纤维尾翼和后扩散器，进一步优化了高速行驶时的稳定性和抓地力。
@@ -28,7 +28,7 @@ RTX 5090 Founders Edition 采用了超薄设计，厚度仅为2个插槽，相�
 当前售价：3万-3万5000元
 # 4. NVIDIA GeForce RTX 5080 Founders Edition： 
 ![图片](../../img/5080fe.jpg "5080fe")
-# 5. AMD 9900X + ROG X670E-E CrossHair Hero + 芝奇皇家戟 32G*2 6000MHZ： 
+# 5. AMD 9950X + ROG X670E-E CrossHair Hero + 芝奇皇家戟 32G*2 6000MHZ： 
 ![图片](../../img/TridentZ5Royal.jpg "TridentZ5Royal")
 # 6. 32寸4K分辨率240HZ刷新率OLED显示器：
 当前售价：5000元-9000元
