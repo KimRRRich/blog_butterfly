@@ -1,5 +1,7 @@
 ---
 title: Zerotier内网穿透+公网自建Moon节点+飞牛影视库
+top_img: /img/zerotier.png
+cover: /img/zerotier.png
 ---
 ## 场景描述：
 最近购买了天钡WTR PRO N100准系统版本，自己购买齐其他备件，装上了飞牛NAS系统。但是这样只能在NAS接入的网络通过局域网IP地址体验NAS，在其他地方便无法使用。为了解决该问题，实现在异地体验NAS观影以及其他体验，决定使用拥有公网IP地址的服务器配置zerotier和Moon节点的方案来实现内网穿透。

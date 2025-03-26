@@ -1,5 +1,7 @@
 ---
 title: KimRRRich愿望单！
+top_img: /img/car.webp
+cover: /img/car.webp
 ---
 <!-- # 说明： -->
 记录KimRRRich当前最想要的东西！想要程度与出现顺序大概为正相关。
